@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .resume-container {
+    @apply w-full bg-white shadow-lg;
+    min-height: 842px;
+    aspect-ratio: 1 / 1.414;
+  }
+  
+  .skill-bar {
+    @apply w-full bg-gray-200 rounded-full h-2.5;
+  }
+  
+  .skill-progress {
+    @apply h-2.5 rounded-full;
+  }
+
+  .skill-progress-blue {
+    @apply bg-blue-600;
+  }
+
+  .skill-progress-green {
+    @apply bg-green-600;
+  }
+
+  .skill-progress-red {
+    @apply bg-red-600;
+  }
+}
