@@ -24,10 +24,13 @@
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://vebochkin.github.io/cv-builder",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+      "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +52,7 @@
   },
   "devDependencies": {
     "autoprefixer": "10.4.17",
+    "gh-pages": "^6.3.0",
     "postcss": "8.4.35",
     "tailwindcss": "3.4.1"
   }
